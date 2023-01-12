@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="image" property="og:image" content="https://i.ibb.co/CKzwjvp/meta-linkedin.png">
+    <meta name="title" property="og:title" content="Amore Gabriele | Web Developer">
+    <meta property="og:type" content="Personal Website | Portfolio">
+    <meta name="description" property="og:description" content="Hello! I am Gabriele | Full Stack Web Developer">
+    <meta name="keywords" content="Full Stack Web Developer">
+    <meta name="author" content="Gabriele Amore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.ibb.co/DQ43f3G/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="app.css">
+    <title>Amore Gabriele | Web Developer</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEVM9ET5TX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CEVM9ET5TX');
+    </script>
+
+</head>
+
+<body>
+    <div id="app">
+
+        <header>
+            <nav>
+                <div id="home" class="nav-bar">
+                    <div class="left">
+                        <img @click="tab='home', scroll()" src="https://i.ibb.co/DQ43f3G/logo.png" alt="">
+                    </div>
+                    <div class="right ">
+                        <ul class="d-flex mb-0">
+                            <li class="d-sm-none d-lg-block" @click="tab='about', scroll()"><a class="ciao" :class="{active : scrollPosition > 750 && scrollPosition < 1249}">ABOUT</a></li>
+                            <li class="d-sm-none d-lg-block" @click="tab='experience', scroll()"><a :class="{active : scrollPosition > 1250 && scrollPosition < 2500}">EXPERIENCE</a></li>
+                            <li class="d-sm-none d-lg-block" @click="tab='works', scroll()"><a :class="{active : scrollPosition > 2500 && scrollPosition < 4000}">WORKS</a></li>
+                            <li class="d-sm-none d-lg-block" @click="tab='skills', scroll()"><a :class="{active : scrollPosition > 4000 && scrollPosition < 4500}">SKILLS</a></li>
+                            <li class="d-sm-none d-lg-block" @click="tab='contact', scroll()"><a :class="{active : scrollPosition > 4700}">CONTACT</a></li>
+                            <li><a href="https://www.linkedin.com/in/gabriele-amore/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/gabbobazinga" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="text-test">
+                    <div class="space-40 d-md-none"></div>
+                    <div class="space-40 d-md-none"></div>
+                    <div class="space-40 d-md-none"></div>
+                    <div class="space-40 d-md-none"></div>
+                    <div class="title">
+                        <span class="block"></span>
+                        <h3 class="mb-lg-0">Hello<span></span></h3>
+                    </div>
+                    <div class="role">
+                        <div class="block"></div>
+                        <h3>I am <span>Gabriele</span></h3>
+                    </div>
+                    <div class="subtitle">
+                        <h4 class="wordCarousel">
+                            <span>Developer.</span>
+                            <div>
+                                <ul class="flip3">
+                                    <li>Front-End</li>
+                                    <li>Web</li>
+                                    <li>Back-End</li>
+                                </ul>
+                            </div>
+                        </h4>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="https://i.ibb.co/Xxx6bfZ/half-face.png" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="about" class="about position-relative">
+                <div class="ps-0 ms-0 container">
+                    <div class="left ps-0">
+                        <div class="img-about">
+                            <div class="box-img">
+                                <img src="https://i.ibb.co/VDmqD2Q/foto-cv-quadrata.png" alt="">
+                            </div>
+                            <h3>About.</h3>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Da sempre amante della tecnologia e dell'arte, terminati gli studi artistici mi sono dedicato completamente all'informatica, apprezzando particolarmente il settore in costante evoluzione, invogliandomi ad essere sempre aggiornato sulle novità che lo riguardano.
+                                <br><br> Il mondo della programmazione rispecchia perfettamente le mie passioni permettendomi una continua crescita personale e professionale. Le parole chiave di questo lavoro sono <span>unicità</span>, <span>creatività</span>                                e <span>libertà</span> con la consapevolezza che ci sarà sempre qualcosa di nuovo da imparare.
+                                <br><br>
+                                <span>
+                                    "𝑳𝒊𝒇𝒆 𝒊𝒔 𝒈𝒓𝒐𝒘𝒕𝒉. 𝒀𝒐𝒖 𝒈𝒓𝒐𝒘 𝒐𝒓 𝒚𝒐𝒖 𝒅𝒊𝒆." <br> <span>𝑃ℎ𝑖𝑙 𝐾𝑛𝑖𝑔ℎ𝑡</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right h-100 pt-sm-2">
+                        <div class="rectangular-form"></div>
+                        <div class="rectangular-form-down"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="experience" class="experience mb-0">
+                <h3>Experience.</h3>
+
+                <div class="color-white ps-6 pb-4 position-relative mb-3">
+                    <div class="d-flex align-items-end rounded overflow-hidden h-50px mb-3">
+                        <div class="square_img d-flex p-1">
+                            <img class="img-fluid" src="https://i.ibb.co/qMtfBhc/logo-t4u.png" alt="">
+                        </div>
+                        <h3 class="font-14 color-white m-0">Training 4U <a target="_blank" href="https://www.training4u.it/"><i class="fas fa-external-link-alt font-08"></i></a> </h3>
+                    </div>
+                    <div class="bar-short"></div>
+                    <h3 class="font-14 color-white opacity-8 mb-0">Full Stack Web Developer</h3>
+                    <h4 class="opacity-8 fw-light font-12 mb-0">A tempo pieno</h4>
+                    <p class="opacity-5 fw-light mb-0">giugno 2022 - presente</p>
+                    <p class="opacity-5 fw-light">Torino, Piemonte, Italia</p>
+                    <!-- <p class="fw-normal mb-0">
+                        <div class="space-40"></div>
+                    </p> -->
+                </div>
+
+                <div class="color-white ps-6 pb-4 position-relative">
+                    <div class="d-flex align-items-end rounded overflow-hidden h-50px mb-3">
+                        <div class="square_img d-flex p-1">
+                            <img class="img-fluid" src="https://i.ibb.co/8btcDsd/eroi-logo-colori.png" alt="">
+                        </div>
+                        <h3 class="font-14 color-white m-0">E.ROI SRL <a target="_blank" href="https://eroisolutions.it/"><i class="fas fa-external-link-alt font-08"></i></a> </h3>
+                    </div>
+                    <div class="bar-short"></div>
+                    <h3 class="font-14 color-white opacity-8 mb-0">Jr Full Stack Web Developer</h3>
+                    <h4 class="opacity-8 fw-light font-12 mb-0">Apprendistato</h4>
+                    <p class="opacity-5 fw-light mb-0">settembre 2021 - giugno 2022</p>
+                    <p class="opacity-5 fw-light">Torino, Piemonte, Italia</p>
+                    <p class="fw-normal mb-0">
+                        Sviluppo dell'area utente del comparatore <a target="_blank" class="fw-bold text-decoration-underline color-light-gold" href="https://convengo.it">Convengo.it</a>  e di <a target="_blank" class="fw-bold text-decoration-underline color-light-gold" href="https://amicaTariffa.it">AmicaTariffa.it</a> utilizzando tecnologie quali Vue Js, Laravel e PHP. <br>
+                        Utilizzo di <strong>Api Conversion Meta</strong> e <strong>Google Ads</strong> per il recupero dei dati statistici delle relative campagne ed inserzioni. <br>
+                        Creazione, tramite VueJs, di un flusso per la <a target="_blank" class="fw-bold text-decoration-underline color-light-gold" href="https://self.convengo.it">comparazione online</a> e ricerca delle migliori offerte luce e gas sul mercato.
+                    </p>
+                </div>
+                <div class="color-white ps-6 pb-4 position-relative">
+                    <div class="bar"></div>
+                    <i class="fas fa-circle opacity-8 dot-experience"></i>
+                    <h3 class="font-14 color-white opacity-8 mb-0">Jr Full Stack Web Developer</h3>
+                    <h4 class="opacity-8 fw-light font-12 mb-0">Stage</h4>
+                    <p class="opacity-5 fw-light mb-0">marzo 2021 - settembre 2021</p>
+                    <p class="opacity-5 fw-light">Leinì, Piemonte, Italia</p>
+                    <p class="fw-normal mb-0">
+                        Sviluppo di un CRM completo con gestione ruoli, agenti e call center. <br>
+                        Script per il tracking tramite sessione, lead generation e statistiche. <br>
+                    </p>
+                    <ul class="list-style">
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>Backpack</li>
+                        <li>MySql</li>
+                        <li>PhpMyAdmin</li>
+                    </ul>
+                    <p class="fw-normal mb-0">Sviluppo in autonomia del front-end del comparatore Convengo.it e relative Landing Page.</p>
+                    <ul class="list-style">
+                        <li>Html</li>
+                        <li>Scss</li>
+                        <li>Javascript e JQuery</li>
+                        <li>Bootstrap 4.0</li>
+                    </ul>
+                </div>
+                
+                <div class="color-white ps-6 pb-4 position-relative">
+                    <div class="d-flex align-items-end rounded overflow-hidden h-50px mb-3">
+                        <div class="square_img d-flex">
+                            <img class="img-fluid" src="https://media-exp1.licdn.com/dms/image/C4D0BAQErbNlWeMNGDQ/company-logo_200_200/0/1600963347198?e=1661385600&v=beta&t=8Fm4EPHN-47DChshG9dI5waZ4HcIyG4CkymGc7QeQhc" alt="">
+                        </div>
+                        <h3 class="font-14 color-white m-0">Boolean Careers <a target="_blank" href="https://boolean.careers/"><i class="fas fa-external-link-alt font-08"></i></a> </h3>
+                    </div>
+                    <h3 class="font-14 color-white opacity-8 mb-0">Full Stack Web Developer Trainee</h3>
+                    <p class="opacity-5 fw-light mb-0">settembre 2020 - marzo 2021</p>
+                    <p class="opacity-5 fw-light">Milano, Lombardia, Italia</p>
+                    <p class="fw-normal mb-0">
+                        Durante i 6 mesi di corso ho avuto modo di fare molta pratica con diversi progetti ispirati alle più famose web applications come <br> Whatsapp Web, Spotify Web, Netflix, DigitalOcean, Hubspost e molte altre. <br>
+                        Le principali tecnologie che ho utilizzato sono:</p>
+                    <ul class="list-style">
+                        <li>HTML</li>
+                        <li>CSS (Sass)</li>
+                        <li>JavaScript (Vue, Axios, JQuery)</li>
+                        <li>PHP</li>
+                        <li>MySql</li>
+                        <li>Laravel</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="works" class="work">
+                <h3>Works.</h3>
+                <div class="card-box">
+                    <template v-for="card in cards"> 
+                        <div class="card border-0 overflow-hidden" :style="{backgroundImage:`url(${card.pathImg})`}">
+                            <div class="fix-bg">
+                                <div class="details">
+                                    <h5>Info.</h5>
+                                    <p> {{ card.info }} </p>
+                                    <div class="button">
+                                        <button class="web-btn" :class="card.showWebBtn ? 'd-block' : ''" v-if="card.webUrl"><a v-if :href="card.webUrl" target="blank">WEB</a></button>
+                                        <button v-if="card.codeUrl"><a v-if :href="card.codeUrl" target="blank">CODE</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3 class="color-white fw-bold nobr mb-1"> {{ card.title }} </h3>
+                                <ul class="m-0 p-0">
+                                    <li class="rounded" v-for="tag in card.tags"> {{ tag }} </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </section>
+            <section id="skills" class="skills overflow-hidden">
+                <h3>Skills.</h3>
+                <div class="list-skills">
+                    <div class="left">
+                        <h3 class="color-white">Front-end.</h3>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="column_2">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Vue</li>
+                                    <li>Vue-Router</li>
+                                    <li>Axios</li>
+                                    <li>JQuery</li>
+                                    <li>SASS</li>
+                                    <li>Bootstrap</li>
+                                    <li>Laravel Mix</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3 class="color-white">Back-end.</h3>
+                        <div class="border-start border-md-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="column_2">
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>Laravel Backpack</li>
+                                        <li>Google ADS</li>
+                                        <li>Facebook API</li>
+                                        <li>MySql</li>
+                                        <li>PHPMyAdmin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logos full-screen">
+                    <div class="item"><img src="https://i.ibb.co/Smz7w32/html.png" alt="html"></div>
+                    <div class="item"><img src="https://i.ibb.co/SXdH1yR/css.png" alt="css"></div>
+                    <div class="item"><img src="https://i.ibb.co/SnsMxwB/js.png" alt="js"></div>
+                    <div class="item"><img src="https://i.ibb.co/2Pz9yF8/vue.png" alt="vue"></div>
+                    <div class="item"><img src="https://i.ibb.co/tc1nmtX/jquery.png" alt="jquery"></div>
+                    <div class="item"><img src="https://i.ibb.co/S7VZMr2/sass.png" alt="sass"></div>
+                    <div class="item"><img src="https://i.ibb.co/rGkrJJD/bootstrap.png" alt="bootstrap"></div>
+                    <div class="item"><img src="https://i.ibb.co/K7xSPc0/php.png" alt="php"></div>
+                    <div class="item"><img src="https://i.ibb.co/D4JK1rQ/mysql.png" alt="mysql"></div>
+                    <div class="item"><img src="https://i.ibb.co/B3pgt5D/laravel.png" alt="laravel"></div>
+                    <div class="item"><img src="https://i.ibb.co/Bt11z0V/backpack-logo.png" alt="backpack"></div> 
+                    <div class="item"><img src="https://i.ibb.co/b3Y0jFz/phpmyadmin.png" alt="phpmyadmin"></div>
+                    <div class="item"><img src="https://i.ibb.co/hgtyhRm/github.png" alt="github"></div> 
+                    <div class="item"><img src="https://i.ibb.co/CnhzWGB/meta-logo.png" alt="meta"></div> 
+                    <div class="item"><img src="https://i.ibb.co/LkCDGfT/google-logo.png" alt="google"></div> 
+                </div>
+            </section>
+            <section id="contact" class="contact bg-gray">
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <h3>Contact me.</h3>
+                        <div class="email-box w-100">
+                            <ul class="m-0 p-0">
+                                <li><a class="ms-0" href="mailto:amoregabriele.95@gmail.com" target="_blank"><i class="fas fa-at"></i>If you'd like to get in touch.</a></li>
+                                <hr>
+                                <li><a class="ms-0" href="https://www.linkedin.com/in/gabriele-amore/" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                                <hr>
+                                <li><a class="ms-0" href="https://github.com/gabbobazinga" target="_blank"><i class="fab fa-github-square"></i>Github</a></li>
+                                <hr>
+                                <li><a class="ms-0" href="https://i.ibb.co/0nbZPcG/CV-amoregabriele.png" download="CV-amore-gabriele"><i class="fas fa-download"></i>Curriculum Vitae</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="space-40 d-lg-none"></div>
+                        <h3>I'm here!</h3>
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Torino&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                        </iframe>
+                                <a href="https://www.whatismyip-address.com"></a><br>
+                                <a href="https://www.embedgooglemap.net"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <section class="py-3">
+        <div class="color-white opacity-5">
+            <div class="d-flex justify-content-between">
+                <span class="font-08">Copyright <i class="far fa-copyright font-05"></i> Gabriele Amore 2021</span>
+                <span class="font-08">Handcrafted with <i class="far fa-heart"></i></span>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        
+    </script>
+</body>
+
+</html>

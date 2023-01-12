@@ -1,0 +1,287 @@
+nav {
+    height: 150px;
+    background-image: linear-gradient(rgb(11, 14, 14) 3rem, rgba(11, 14, 14, 0));
+    background-color: initial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 90;
+    .nav-bar {
+        height: 60px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $text-prymary-color;
+        a {
+            height: 2rem;
+            align-items: center;
+            color: $link-color;
+            transition: color .4s ease-out;
+            line-height: 1;
+            &:hover {
+                color: $link-hover-color;
+                cursor: pointer;
+            }
+        }
+        .left {
+            width: 30px;
+            margin-left: 50px;
+            img {
+                display: block;
+                width: 100%;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .right {
+            ul {
+                li {
+                    display: inline;
+                    margin-left: 2rem;
+                    &:last-of-type {
+                        margin-left: 1rem;
+                    }
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .text-test {
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: $hero-fontsize;
+
+      .block {
+        width: 0%;
+        height: inherit;
+        background: $link-hover-color;
+        position: absolute;
+        animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+        display: flex;
+      }
+
+      h3 {
+        color: $link-hover-color;
+        font-size: $hero-fontsize;
+        -webkit-animation: mainFadeIn 2s forwards;
+        -o-animation: mainFadeIn 2s forwards;
+        animation: mainFadeIn 2s forwards;
+        animation-delay: 1.6s;
+        opacity: 0;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        padding-left: 5rem;
+
+        span {
+          width:0px;
+          height: 0px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          background: $text-prymary-color;
+          -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation-delay: 2s;
+          margin-left: 5px;
+          margin-top: -10px;
+          position: absolute;
+          bottom: 25px;
+          right: -12px;
+
+        }
+      }
+    }
+
+    .role {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: $hero-fontsize;
+      margin-top: 10px;
+
+      .block {
+        width: 0%;
+        height: inherit;
+        background: $text-prymary-color;
+        position: absolute;
+        animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+        animation-delay: 2s;
+        display: flex;
+      }
+
+      h3 {
+        animation: secFadeIn 2s forwards;
+        animation-delay: 3.2s;
+        opacity: 0;
+        padding-left: 5rem;
+        color: $text-prymary-color;
+        font-size: $hero-fontsize;
+      }
+    }
+
+    .wordCarousel {
+        opacity: 0;
+        animation: secFadeIn 2s forwards;
+        animation-delay: 4s;
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 3rem;
+        color: #eee;
+        div {
+            text-align: end;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            height: 65px;
+            padding-top: 10px;
+            margin-top: -10px;
+            li {
+                color: $link-hover-color;
+                padding: 0 10px;
+                height: 45px;
+                margin-bottom: 45px;
+                display: block;
+            }
+        }
+    }
+    
+    .flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+    
+    @keyframes flip3 {
+        0% { margin-top: -270px; }
+        5% { margin-top: -180px; }
+        33% { margin-top: -180px; }
+        38% { margin-top: -90px; }
+        66% { margin-top: -90px; }
+        71% { margin-top: 0px; }
+        99.99% { margin-top: 0px; }
+        100% { margin-top: -270px; }
+    }
+
+  }
+
+  .img {
+    height: 100vh;
+    min-height: 100vh;
+    img {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0%;
+        z-index: -1;
+    }
+}
+}
+
+//ANIMATION TITLE
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+
+  }
+  50% {
+    width: 100%;
+    left: 0;
+
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+
+  }
+  50% {
+    width: 100%;
+    left: 0;
+
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: white;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+    background: white;
+    opacity: 1;
+    bottom: 60px;
+  }
+   65% {
+      width: 17px;
+    height: 17px;
+      bottom: 0px;
+      width: 30px
+   }
+   80% {
+      width: 20px;
+    height: 20px;
+      bottom: 35px
+   }
+  100% {
+    width: 17px;
+    height: 17px;
+    background: $link-hover-color;
+    border: 0px solid #222;
+    bottom: 28px;
+
+  }
+}
+
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,15 @@
+footer{
+    .container {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+        span {
+            font-size: 0.8rem;
+            color: $text-prymary-color;
+            opacity: 0.5;
+            letter-spacing: 1px;
+        }
+    }
+}
